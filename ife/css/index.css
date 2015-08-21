@@ -1,0 +1,32 @@
+*{ margin: 0; padding: 0; border: 0; font-size: 62.5%;}
+img{ width: 100%; height: auto; display: block;}
+html{ font-size: 100%;}
+body{ height: 100%; font-size: 1em; font-family: 'Microsoft Yahei','Helvetica Neue',Arial,Helvetica,'Liberation Sans';}
+a{ -webkit-tap-highlight-color: transparent;}
+#main{ height: 100%;}
+header{ width: 100%; background-color: #8ed498; border-bottom: 1px solid #ececec; position: fixed; top: 0; z-index: 3;}
+header .title{ padding: 3.5% 0; text-align: center; color: #fff; font-size: 2.5em;}
+header .btn-menu{ position: absolute; left: 5%; top: 30%; max-width: 6%;}
+header .pen{ position: absolute; right: 4%; top: 16%; max-width: 8%;}
+section{ margin-top: 12%;}
+section.menu{ width: 100%; margin-top: 0; position: fixed; border-top: 1px solid #ececec; background-color: #8ed498; z-index: 1; display: none;}
+section .menus{ padding: 3% 5%; padding-right: 0; color: #fff; font-size: 4em; display: inline-block;}
+section .menus.active{ color: #ff0;}
+.detail{ height: 27.5%; border-bottom: 1px dashed #d7d7d7;}
+.detail:nth-child(odd){ background-color: #fbfbfb;}
+.detail:last-child{ position: relative; background-color: transparent;}
+section .lists{ display: inline-block; vertical-align: middle;}
+section .type{ max-width: 9%; margin: 4%;}
+section .description{ font-size: 7em;}
+section .money{ margin-left: 7%; margin-top: 0; font-size: 7em; color: #8ed498;}
+section .lists.minus{ color: #f00;}
+section .time{ position: absolute; margin-top: 2%; right: 5%; text-align: right; color: #9e9e9e; font-size: 5em;}
+section .count{ margin: 4.6%; font-size: 6em; color: #8ed498;}
+section .touch{ position: absolute; right: 5%; bottom: 20%; width: 65px; height: 30px;}
+section .operation{ position: absolute; bottom: 0; right: 0; padding: 3% 0; background-color: #f00; display: none;}
+section .operate{ max-width: 23%; margin: 0 12%; display: inline-block;}
+section#charts{ width: 100%; display: none;}
+section .chart{ margin: 0 4%; border-bottom: 1px solid #ddd;}
+section .count ul li{ width: 33.3%; text-align: center;  padding: 5% 0 6%; color: #000; font-size: 0.6em; display: inline-block;}
+section .count ul span{ font-size: 1em;}
+section #pie{ margin-top: 5%; padding-left: 4%; border-bottom: 1px solid #ddd;}

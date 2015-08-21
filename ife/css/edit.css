@@ -1,0 +1,26 @@
+*{ margin: 0; padding: 0; border: 0; font-size: 62.5%;}
+html{ font-size: 100%;}
+body{ height: 100%; font-size: 1em;  font-family: 'Microsoft Yahei','Helvetica Neue',Arial,Helvetica,'Liberation Sans';}
+img{ width: 100%; height: auto; display: block;}
+#main{ height: 100%;}
+header{ height: 8%; background-color: #f8f8f8; border-bottom: 1px solid #ececec; position: relative;}
+header .title{ padding: 3.5% 0; text-align: center; font-size: 2.5em;}
+header .close{ position: absolute; left: 4%; top: 36%; max-width: 4%;}
+header .publish{ position: absolute; right: 4.5%; top: 16%; max-width: 15%;}
+section{ height: 40%;}
+.earning{ margin-top: 2.5%; margin-left: 4%; border-bottom: 1px solid #ececec; padding-bottom: 2%;}
+.earning .income{ max-width: 11%; text-align: center; display: inline-block;}
+.project{ margin-top: 8%; font-size: 0.02em;}
+.consuming{ margin-top: 2.8%; margin-left: 4%; padding-bottom: 1%; border-bottom: 1px solid #ececec;}
+.life{ max-width: 11%; margin-right: 8%; text-align: center; display: inline-block;}
+.other{ border-bottom: 0;}
+footer{ position: relative; z-index: 1; height: 52%; background-color: #f8f8f8; display: none;}
+#print{ height: 27.5%; border-top: 1px solid #ececec; border-bottom: 1px solid #ececec;}
+#print .cal{ display: inline-block; vertical-align: middle;}
+#print .type{ max-width: 11%; margin: 6% 1% 5% 4%;}
+#print .description{ font-size: 4em;}
+#print .money{ margin-left: 40%; font-size: 4em;}
+#print .result{ font-size: 1em;}
+#calculator{ height: 72.5%;}
+.keyboard{ height: 25%; border-bottom: 1px solid #ececec;}
+.keyboard .key{ width: 23%; padding: 3% 0; border-left: 1px solid #ececec; text-align: center; font-size: 9em; display: inline-block;}
