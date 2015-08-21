@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>记账本</title>
+	<link type="text/css" rel="stylesheet" href="./css/edit.css">
+</head>
+<body>
+	<div id="main">
+		<header>
+			<div class="title">记一笔</div>
+			<div class="close"><a href="index.html"><img src="./img/close.png" alt=""></a></div>
+			<div class="publish"><img src="./img/publish.png" alt=""></div>
+		</header>
+		<section>
+			<div class="earning">
+				<div class="type-btn income" data-id="0">
+					<img src="./img/income.png" alt="">
+					<div class="project">收入</div>
+				</div>
+			</div>
+			<div class="consuming">
+				<div class="type-btn life" data-id="1">
+					<img src="./img/clothes.png" alt="">
+					<div class="project">衣服</div>
+				</div>
+				<div class="type-btn life" data-id="2">
+					<img src="./img/food.png" alt="">
+					<div class="project">饮食</div>
+				</div>
+				<div class="type-btn life" data-id="3">
+					<img src="./img/living.png" alt="">
+					<div class="project">住宿</div>
+				</div>
+				<div class="type-btn life" data-id="4">
+					<img src="./img/transport.png" alt="">
+					<div class="project">交通</div>
+				</div>
+			</div>
+			<div class="consuming other">
+				<div class="type-btn life" data-id="5">
+					<img src="./img/shopping.png" alt="">
+					<div class="project">购物</div>
+				</div>
+				<div class="type-btn life" data-id="6">
+					<img src="./img/other.png" alt="">
+					<div class="project">其他</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div id="print">
+				<div class="cal type"><img src="./img/income.png" alt=""></div>
+				<div class="cal description">收入</div>
+				<div class="cal money">￥ <span class="result">0</span></div>
+			</div>
+			<div id="calculator">
+				<div class="keyboard">
+					<div class="key num" data-value="1">1</div>
+					<div class="key num" data-value="2">2</div>
+					<div class="key num" data-value="3">3</div>
+					<div class="key del" data-value="del">←</div>
+				</div>
+				<div class="keyboard">
+					<div class="key num" data-value="4">4</div>
+					<div class="key num" data-value="5">5</div>
+					<div class="key num" data-value="6">6</div>
+					<div class="key operate" data-value="+">+</div>
+				</div>
+				<div class="keyboard">
+					<div class="key num" data-value="7">7</div>
+					<div class="key num" data-value="8">8</div>
+					<div class="key num" data-value="9">9</div>
+					<div class="key operate" data-value="-">-</div>
+				</div>
+				<div class="keyboard">
+					<div class="key clear">C</div>
+					<div class="key num" data-value="0">0</div>
+					<div class="key num" data-value=".">.</div>
+					<div class="key equal" data-value="=">=</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript" src="./js/zepto.min.js"></script>
+	<script type="text/javascript" src="./js/edit.js"></script>
+	<script>
+</body>
+</html>
