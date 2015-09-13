@@ -12,11 +12,15 @@ $(function(){
 			totalExpenditure : 0,
 			totalSurplusage : 0,
 			monthData : {
-				income : [0,0,0,0,0,0,0,0,0,0,0,0],
-				expenditure : [0,0,0,0,0,0,0,0,0,0,0,0]
+				income : [],
+				expenditure : []
 			}
 		};
-		// Model
+
+		for (var i = 0; i < 12; i++) {
+			app.monthData.income[i] = app.monthData.expenditure[i] = 0;
+		}
+
 		app.model = {
 			getData : function (callback) {
 				var i,
@@ -75,22 +79,21 @@ $(function(){
 			}
 		};
 
-		// View
 		app.view = {
 			start : function () {
-				// get datas from localStorage
+				//get datas from localStorage
 				app.model.getData(function (_data) {
-					// // artTemplate transfer 1
+					//artTemplate transfer 1
 					var html = template("tpl", _data);
 					$("#lists").append(html);
 					app.model.total(_data);
 				});
 
-				// artTemplate transfer 2 
+				//artTemplate transfer 2 
 				var html = template("total-data", app);
 				$("#charts").append(html);
 
-				// left button of index page
+				//eft button of index page
 				$(".btn-menu").on("click", function () {
 					if(app.menu.css("display") === "none"){
 						$(this).find("img").attr("src", "./img/close1.png");
@@ -105,18 +108,18 @@ $(function(){
 
 				$(".menu-statistics").on("click", this.showChart);
 
-				// show the operation by touchmove
+				//show the operation by touchmove
 				$(".touch").on("touchmove", function (e) {
 					e.stopPropagation();
 					$(this).next().css("display", "block");
 				});
 
-				// close the operation
+				//close the operation
 				$(".operation").on("click", function () {
 					$(".operation").css("display", "none");
 				});
 
-				// delete data
+				//delete data
 				$(".delete").on("click", function () {
 					var index = $(this).attr("data-id");
 					app.storage.removeItem(index);
@@ -241,7 +244,6 @@ $(function(){
 			}
 		};
 
-		// Controller
 		app.start = function () {
 			app.view.start();
 		};

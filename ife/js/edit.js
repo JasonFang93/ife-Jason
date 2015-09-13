@@ -15,7 +15,7 @@ $(function(){
 		};
 
 		demo.model = {
-			// add data into localStorage
+			//add data into localStorage
 			add : function () {
 				demo.data += "\""+demo.description.attr("data-id")+"\":"+"\""+demo.result.html()+"\"";
 				if(demo.result.html() != "0"){
@@ -35,7 +35,6 @@ $(function(){
 			}
 		};
 
-		// View
 		demo.view = {
 			start : function () {
 				var arr = window.location.href.split("/");
@@ -147,7 +146,6 @@ $(function(){
 			}
 		};
 
-		// Controller
 		demo.start = function () {
 			demo.view.start();
 		};
