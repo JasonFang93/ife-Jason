@@ -12,4 +12,4 @@
 ####后记
     在实习之余写的，由于一个人，技术也比较菜，做了这么久，没能在截止日期前完成，哎_(:зゝ∠)_
   
-在线demo： http://jasonfang93.github.io/ife/index.html（推荐chrome，按F12打开）
+在线demo（推荐chrome，按F12打开）： http://jasonfang93.github.io/ife/index.html
